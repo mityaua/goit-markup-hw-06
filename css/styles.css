@@ -894,7 +894,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
 
   width: 528px;
-  height: 581px;
+  height: auto;
   border-radius: 4px;
 
   background-color: var(--primary-bg-color);
@@ -905,8 +905,6 @@ img {
 }
 
 .modal-icon {
-  /* display: flex;
-  justify-content: flex-end; */
   position: absolute;
   top: 0;
   right: 0;
@@ -915,19 +913,22 @@ img {
 }
 
 .modal-close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 30px;
   height: 30px;
   padding: 6px;
-
-  background-color: var(--primary-bg-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  background-color: var(--primary-bg-color);
 }
 
 .modal-close-icon {
-  vertical-align: middle;
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
 
   fill: #000000;
 }
@@ -970,6 +971,12 @@ img {
   border-radius: 4px;
 }
 
+.callback-commit {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
 .callback-input::placeholder {
   font-size: 12px;
   line-height: 1.16;
@@ -978,12 +985,22 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal .callback-input {
+.modal textarea {
   resize: none;
+}
+
+.policy-block {
+  margin-bottom: 30px;
+
+  text-align: center;
 }
 
 .policy-link {
   color: var(--accent-color);
+}
+
+.btn-block {
+  text-align: center;
 }
 
 .callback-btn {
