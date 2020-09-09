@@ -834,6 +834,8 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* Кнопка подписки */
+
 .subscribe-btn {
   display: flex;
   align-items: center;
@@ -861,7 +863,7 @@ img {
   margin-left: 10px;
 }
 
-/* Модальное окно с бекдропом */
+/* Бекдроп для модального окна */
 
 .backdrop {
   position: fixed;
@@ -886,6 +888,8 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
+
+/* Модальное окно */
 
 .modal {
   position: absolute;
@@ -942,13 +946,17 @@ img {
   fill: var(--accent-color);
 }
 
+/* Форма */
+
 .callback-form {
   width: 100%;
   padding: 40px;
 }
 
+/* Название формы */
+
 .callback-title {
-  margin-top: 0;
+  display: inline-block;
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -980,6 +988,8 @@ img {
   border-radius: 4px;
 }
 
+/* Комментарий для формы */
+
 .callback-commit {
   display: flex;
   flex-direction: column;
@@ -994,9 +1004,11 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal textarea {
+.callback-commit textarea {
   resize: none;
 }
+
+/* Политика для формы */
 
 .policy-block {
   display: flex;
@@ -1005,7 +1017,10 @@ img {
   margin-bottom: 30px;
 }
 
-.policy-checkbox {
+/* Для второго занятия */
+.policy-block input[type="checkbox"] {
+  width: 16px;
+  height: 15px;
   margin-right: 8px;
 }
 
@@ -1016,6 +1031,8 @@ img {
 .btn-block {
   text-align: center;
 }
+
+/* Кнопка отправки формы */
 
 .callback-btn {
   padding: 10px 55px;
