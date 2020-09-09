@@ -924,6 +924,8 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   background-color: var(--primary-bg-color);
+
+  cursor: pointer;
 }
 
 .modal-close-icon {
@@ -931,6 +933,13 @@ img {
   height: 18px;
 
   fill: #000000;
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.modal-close-button:hover .modal-close-icon,
+.modal-close-button:focus .modal-close-icon {
+  fill: var(--accent-color);
 }
 
 .callback-form {
@@ -990,9 +999,14 @@ img {
 }
 
 .policy-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
+}
 
-  text-align: center;
+.policy-checkbox {
+  margin-right: 8px;
 }
 
 .policy-link {
@@ -1011,16 +1025,13 @@ img {
   border-radius: 4px;
 
   background: var(--accent-color);
-
+  color: var(--primary-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
   letter-spacing: 0.06em;
-
-  color: var(--primary-bg-color);
 
   cursor: pointer;
 }
