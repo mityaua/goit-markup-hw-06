@@ -989,10 +989,14 @@ img {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: all 250ms var(--timing-function);
 }
 
-.callback-input:focus + .callback-icon {
-  fill: var(--accent-color);
+/* ПОД ВОПРОСОМ! */
+.callback-input:focus {
+  outline: transparent;
+  border: 1px solid var(--accent-color);
 }
 
 .callback-icon {
@@ -1000,7 +1004,16 @@ img {
   top: 50%;
   left: 12px;
 
+  width: 18px;
+  height: 18px;
+
   transform: translateY(-50%);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.callback-area:focus-within .callback-icon {
+  fill: var(--accent-color);
 }
 
 /* Комментарий для формы */
@@ -1011,7 +1024,7 @@ img {
   margin-bottom: 20px;
 }
 
-.callback-input::placeholder {
+.callback-commit textarea::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -1028,6 +1041,11 @@ img {
   border-radius: 4px;
 
   resize: none;
+}
+
+.callback-commit textarea:focus {
+  outline: transparent;
+  border: 1px solid var(--accent-color);
 }
 
 /* Политика для формы */
