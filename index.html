@@ -492,47 +492,56 @@
     <!-- Модальное окно с бекдропом -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="modal-icon">
+        <form class="callback-form js-speaker-form" autocomplete="off">
           <button data-modal-close class="modal-close-button" type="button">
             <svg class="modal-close-icon" width="18" height="18">
               <use href="./images/sprite.svg#icon-close"></use>
             </svg>
           </button>
-        </div>
-        <form class="callback-form js-speaker-form">
+
           <b class="callback-title">
             Оставьте свои данные, мы вам перезвоним
           </b>
-          <div class="callback-group">
-            <label for="name" class="callback-label">Имя</label>
-            <input class="callback-input" type="text" name="name" id="name" />
-          </div>
 
-          <div class="callback-group">
-            <label for="tel" class="callback-label">Телефон</label>
-            <input class="callback-input" type="tel" name="tel" id="tel" />
-          </div>
+          <label class="callback-group">
+            <span class="callback-label">Имя</span>
 
-          <div class="callback-group">
-            <label for="email" class="callback-label">Почта</label>
-            <input
-              class="callback-input"
-              type="email"
-              name="email"
-              id="email"
-            />
-          </div>
+            <div class="callback-area">
+              <input class="callback-input" type="text" name="name" />
+              <svg class="callback-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-form-name"></use>
+              </svg>
+            </div>
+          </label>
 
-          <div class="callback-commit">
-            <label for="commit" class="callback-label">Комментарий</label>
+          <label class="callback-group">
+            <span class="callback-label">Телефон</span>
+            <div class="callback-area">
+              <input class="callback-input" type="tel" name="tel" />
+              <svg class="callback-icon" width="13" height="13">
+                <use href="./images/sprite.svg#icon-form-phone"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="callback-group">
+            <span class="callback-label">Почта</span>
+            <div class="callback-area">
+              <input class="callback-input" type="email" name="email" />
+              <svg class="callback-icon" width="15" height="18">
+                <use href="./images/sprite.svg#icon-form-mail"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="callback-commit">
+            <span class="callback-label">Комментарий</span>
             <textarea
-              class="callback-input"
               name="commit"
-              id="commit"
               rows="5"
               placeholder="Введите текст"
             ></textarea>
-          </div>
+          </label>
 
           <div class="policy-block">
             <input type="checkbox" name="policy" id="policy" />
