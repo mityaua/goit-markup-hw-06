@@ -1061,7 +1061,7 @@ img {
   margin-bottom: 30px;
 }
 
-.checkbox:checked + .policy-icon {
+.checkbox:checked + .policy-icon::before {
   border-color: var(--accent-color);
 
   background-color: var(--accent-color);
@@ -1070,9 +1070,11 @@ img {
   background-origin: border-box;
 }
 
-.policy-icon {
+.policy-icon::before {
+  content: "";
+  display: block;
+
   margin-right: 7px;
-  /* display: inline-block; */
   width: 16px;
   height: 15px;
 
