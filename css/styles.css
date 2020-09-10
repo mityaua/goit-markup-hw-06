@@ -991,6 +991,8 @@ img {
   border-radius: 4px;
 
   transition: all 250ms var(--timing-function);
+
+  cursor: pointer;
 }
 
 /* ПОД ВОПРОСОМ! */
@@ -1041,6 +1043,8 @@ img {
   border-radius: 4px;
 
   resize: none;
+
+  cursor: pointer;
 }
 
 .callback-commit textarea:focus {
@@ -1057,21 +1061,36 @@ img {
   margin-bottom: 30px;
 }
 
-.policy-block input[type="checkbox"] {
+.checkbox:checked + .policy-icon {
+  border-color: var(--accent-color);
+
+  background-color: var(--accent-color);
+  background-image: url("../images/form-check.svg");
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.policy-icon {
+  margin-right: 7px;
+  /* display: inline-block; */
   width: 16px;
   height: 15px;
-  margin-right: 8px;
+
+  border: 2px solid var(--second-text-color);
+  border-radius: 2px;
+
+  transition: all 250ms var(--timing-function);
 }
 
 .policy-link {
   color: var(--accent-color);
 }
 
+/* Кнопка отправки формы */
+
 .btn-block {
   text-align: center;
 }
-
-/* Кнопка отправки формы */
 
 .callback-btn {
   padding: 10px 55px;

@@ -543,13 +543,19 @@
             ></textarea>
           </label>
 
-          <div class="policy-block">
-            <input type="checkbox" name="policy" id="policy" />
-            <label for="policy"
+          <label class="policy-block">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="policy"
+              value="agree"
+            />
+            <span class="policy-icon"></span>
+            <span
               >Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="policy-link">Условия договора</a>
-            </label>
-          </div>
+              <a href="#" class="policy-link">Условия договора</a></span
+            >
+          </label>
 
           <div class="btn-block">
             <button type="submit" class="callback-btn">Отправить</button>
