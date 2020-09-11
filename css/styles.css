@@ -819,12 +819,12 @@ img {
 
 /* Форма подписки в футере */
 
-.form-field {
+.subscribe-field {
   display: flex;
   align-items: center;
 }
 
-.form-field input {
+.subscribe-field input {
   width: 358px;
   height: 50px;
   padding: 15px;
@@ -837,12 +837,20 @@ img {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+
+  transition: all 250ms var(--timing-function);
 }
 
-.form-field input::placeholder {
+.subscribe-field input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* ПОД ВОПРОСОМ! */
+.subscribe-field input:focus {
+  outline: transparent;
+  border: 1px solid currentColor;
 }
 
 /* Кнопка подписки */
