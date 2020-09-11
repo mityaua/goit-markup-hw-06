@@ -873,15 +873,24 @@ img {
   cursor: pointer;
 }
 
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  opacity: 0.9;
+}
+
 .subscribe-icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+
+  transform: scale(1);
+
+  transition: transform 250ms var(--timing-function);
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  opacity: 0.9;
+.subscribe-btn:hover .subscribe-icon,
+.subscribe-btn:focus .subscribe-icon {
+  transform: scale(0.9);
 }
 
 /* Бекдроп для модального окна */
