@@ -20,6 +20,7 @@
 
 body {
   background-color: var(--primary-bg-color);
+
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
@@ -33,15 +34,16 @@ body {
 .list {
   padding: 0;
   margin: 0;
+
   list-style: none;
 }
 
 .container {
+  width: 1200px;
+
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-
-  width: 1200px;
 }
 
 img {
@@ -142,11 +144,12 @@ img {
   left: 0;
 
   display: block;
+
   width: 100%;
   height: 4px;
+  border-radius: 2px;
 
   background-color: var(--accent-color);
-  border-radius: 2px;
 }
 
 /* Контакты в хедере */
@@ -162,9 +165,10 @@ img {
 }
 
 .header-mail {
-  margin-right: 10px;
   width: 16px;
   height: 12px;
+
+  margin-right: 10px;
 
   fill: currentColor;
 }
@@ -200,10 +204,10 @@ img {
   display: flex;
   align-items: center;
 
-  margin-left: auto;
-  margin-right: auto;
   max-width: 1600px;
   min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: var(--second-bg-color);
   background-image: linear-gradient(
@@ -218,9 +222,9 @@ img {
 }
 
 .hero-content {
+  max-width: 696px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 696px;
 
   text-align: center;
 }
@@ -243,13 +247,14 @@ img {
 .button-order {
   display: inline-block;
 
-  padding: 10px 32px;
   min-width: 200px;
   height: 50px;
+  padding: 10px 32px;
   border-radius: 4px;
   border: 0px solid transparent;
 
   background-color: var(--accent-color);
+
   color: var(--primary-bg-color);
 
   font-family: inherit;
@@ -258,9 +263,9 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  cursor: pointer;
-
   transition: box-shadow 250ms var(--timing-function);
+
+  cursor: pointer;
 }
 
 .button-order:hover,
@@ -289,9 +294,10 @@ img {
 .features-img {
   margin-bottom: 30px;
   padding: 20px 100px;
-  text-align: center;
 
   background-color: var(--additional-background-color);
+
+  text-align: center;
 }
 
 .features-icon {
@@ -347,15 +353,17 @@ img {
   position: absolute;
   bottom: 0;
   left: 50%;
+
   transform: translate(-50%, 0);
 
+  width: 370px;
+  height: 70px;
   margin: 0;
   padding-top: 27px;
   padding-bottom: 27px;
-  width: 370px;
-  height: 70px;
 
   background-color: rgba(47, 48, 58, 0.8);
+
   color: var(--primary-bg-color);
 
   font-weight: 700;
@@ -395,12 +403,12 @@ img {
 
 .team-item {
   width: calc((100% - 90px) / 4);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
 }
 
 .team-item:not(:last-child) {
@@ -409,6 +417,7 @@ img {
 
 .team-content {
   padding: 30px 32px;
+
   text-align: center;
 }
 
@@ -447,7 +456,6 @@ img {
 
   width: 44px;
   height: 44px;
-
   border-radius: 50%;
 
   transition: background-color 250ms var(--timing-function);
@@ -500,7 +508,6 @@ img {
 .clients-item {
   width: calc((100% - 30px * 5) / 6);
   height: 90px;
-
   border: 1px solid var(--svg-color);
   border-radius: 4px;
 
@@ -561,13 +568,14 @@ img {
 .filters-button {
   display: inline-block;
 
-  padding: 6px 22px;
   min-width: 73px;
   height: 38px;
+  padding: 6px 22px;
   border-radius: 4px;
   border: 0px solid transparent;
 
   background-color: var(--additional-background-color);
+
   color: var(--second-text-color);
 
   font-family: inherit;
@@ -637,12 +645,13 @@ img {
   left: 0;
   transform: translate(0, 100%);
 
-  margin: 0;
-  padding: 63px 24px;
   width: 370px;
   height: 294px;
+  margin: 0;
+  padding: 63px 24px;
 
   background-color: rgba(33, 150, 243, 0.9);
+
   color: var(--primary-bg-color);
 
   font-size: 18px;
@@ -663,7 +672,6 @@ img {
 
 .portfolio-content {
   padding: 20px 24px;
-
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -741,8 +749,9 @@ img {
 .footer-adress .link {
   margin-bottom: 9px;
 
-  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
 
   transition: color 250ms var(--timing-function);
 }
@@ -956,12 +965,12 @@ img {
 
   margin-bottom: 12px;
 
+  color: var(--second-text-color);
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-
-  color: var(--second-text-color);
 }
 
 .callback-group {
@@ -1023,6 +1032,7 @@ img {
 .callback-commit {
   display: flex;
   flex-direction: column;
+
   margin-bottom: 20px;
 }
 
@@ -1068,6 +1078,7 @@ img {
   display: block;
 
   content: "";
+
   width: 16px;
   height: 15px;
   margin-right: 7px;

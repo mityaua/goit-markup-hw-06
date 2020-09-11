@@ -289,7 +289,7 @@
         </section>
       </div>
     </main>
-<footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-blocks">
           <!-- Адрес в футере -->
@@ -347,14 +347,19 @@
           <!-- Форма подписки в футере -->
           <div class="subscribe">
             <b class="network-title">Подпишитесь на рассылку</b>
-            <form class="js-speaker-form form-field">
+            <form class="form-field">
               <input
                 type="email"
                 name="subscribe-email"
                 id="subscribe-email"
                 placeholder="E-mail"
+                aria-label="Введите почту для будущей рассылки"
               />
-              <button type="submit" class="subscribe-btn">
+              <button
+                type="submit"
+                class="subscribe-btn"
+                aria-label="Оформляет подписку на рассылку"
+              >
                 <span>Подписаться</span>
                 <svg class="subscribe-icon" width="24" height="24">
                   <use href="./images/sprite.svg#icon-send"></use>
