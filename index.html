@@ -498,7 +498,7 @@
     <!-- Модальное окно с бекдропом -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="callback-form js-speaker-form" autocomplete="off">
+        <form class="callback-form js-speaker-form">
           <button
             data-modal-close
             class="modal-close-btn"
@@ -516,33 +516,32 @@
 
           <label class="callback-group">
             <span class="callback-label">Имя</span>
-
-            <div class="callback-area">
+            <span class="callback-area">
               <input class="callback-input" type="text" name="name" />
               <svg class="callback-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-form-name"></use>
               </svg>
-            </div>
+            </span>
           </label>
 
           <label class="callback-group">
             <span class="callback-label">Телефон</span>
-            <div class="callback-area">
+            <span class="callback-area">
               <input class="callback-input" type="tel" name="tel" />
               <svg class="callback-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-form-phone"></use>
               </svg>
-            </div>
+            </span>
           </label>
 
           <label class="callback-group">
             <span class="callback-label">Почта</span>
-            <div class="callback-area">
+            <span class="callback-area">
               <input class="callback-input" type="email" name="email" />
               <svg class="callback-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-form-mail"></use>
               </svg>
-            </div>
+            </span>
           </label>
 
           <label class="callback-commit">
