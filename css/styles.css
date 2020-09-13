@@ -263,7 +263,7 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  opacity: 1;
+  transform: scale(1);
 
   transition: all 250ms var(--timing-function);
 
@@ -273,7 +273,7 @@ img {
 .btn-order:hover,
 .btn-order:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  opacity: 0.9;
+  transform: scale(0.93);
 }
 
 /* Преимущества */
@@ -874,31 +874,22 @@ img {
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
 
-  transition: opacity 250ms var(--timing-function);
+  transform: scale(1);
 
-  opacity: 1;
+  transition: transform 250ms var(--timing-function);
 
   cursor: pointer;
 }
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-  opacity: 0.9;
+  transform: scale(0.93);
 }
 
 .subscribe-icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-
-  transform: scale(1);
-
-  transition: transform 250ms var(--timing-function);
-}
-
-.subscribe-btn:hover .subscribe-icon,
-.subscribe-btn:focus .subscribe-icon {
-  transform: scale(0.9);
 }
 
 /* Бекдроп для модального окна */
@@ -1143,14 +1134,14 @@ img {
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
 
-  opacity: 2;
+  transform: scale(1);
 
-  transition: opacity 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
 
   cursor: pointer;
 }
 
 .callback-btn:hover,
 .callback-btn:focus {
-  opacity: 0.9;
+  transform: scale(0.93);
 }
