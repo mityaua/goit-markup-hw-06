@@ -1079,11 +1079,14 @@ img {
 /* Политика для формы */
 
 .policy-block {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  display: block;
 
   margin-bottom: 30px;
+
+  text-align: center;
 }
 
 .checkbox:checked + .policy-icon::before {
@@ -1096,7 +1099,7 @@ img {
 }
 
 .policy-icon::before {
-  display: block;
+  display: inline-block;
 
   content: "";
 
@@ -1105,6 +1108,7 @@ img {
   margin-right: 7px;
   border: 2px solid var(--second-text-color);
   border-radius: 2px;
+  vertical-align: middle;
 
   transition: all 250ms var(--timing-function);
 }
